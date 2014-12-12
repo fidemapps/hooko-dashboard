@@ -1,0 +1,19 @@
+{
+  "name": "hooko-dashboard",
+  "version": "0.0.0",
+  "description": "Hooko dashboard.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fidemapps/hooko-dashboard.git"
+  },
+  "author": "Greg Bergé <berge.greg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fidemapps/hooko-dashboard/issues"
+  },
+  "homepage": "https://github.com/fidemapps/hooko-dashboard",
+  "devDependencies": {
+    "browser-sync": "^1.7.2",
+    "gulp": "^3.8.10"
+  }
+}

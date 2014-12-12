@@ -1,0 +1,17 @@
+<div class="panel panel-default" ng-repeat="hook in hooksDetail.hooks">
+  <div class="panel-heading">{{hook.name}}</div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-6">
+        <code pretty-json="hook"></code>
+      </div>
+      <div class="col-sm-6">
+        <ul>
+          <li>Active actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'active'}).length}}</li>
+          <li>Success actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'success'}).length}}</li>
+          <li>Failed actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'failed'}).length}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

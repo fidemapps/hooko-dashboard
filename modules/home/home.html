@@ -1,0 +1,11 @@
+<h2>Bundles</h2>
+
+<div class="panel panel-default" ng-repeat="bundle in home.bundles">
+  <div class="panel-heading">{{bundle.name}}</div>
+  <div class="panel-body">
+    <code pretty-json="bundle"></code>
+
+    <h4>Hooks</h4>
+    <hooks-detail bundle="bundle"></hooks-detail>
+  </div>
+</div>
