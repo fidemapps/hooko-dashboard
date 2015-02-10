@@ -8,7 +8,7 @@
       <div class="col-sm-6">
         <ul>
           <li>Active actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'active'}).length}}</li>
-          <li>Success actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'success'}).length}}</li>
+          <li>Complete actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'complete'}).length}}</li>
           <li>Failed actions: {{(hooksDetail.actions | filter:{name: hook.name, state: 'failed'}).length}}</li>
         </ul>
       </div>
