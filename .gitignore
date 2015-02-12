@@ -1,2 +1,4 @@
 node_modules/
-bower_components/
+server/bower_components/
+server/modules/config.js
+

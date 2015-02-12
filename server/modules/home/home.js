@@ -1,5 +1,6 @@
 angular.module('hooko.home', [
   'hooko.resources',
+  'hooko.config',
   'hooko.home.hooksDetail',
   'hooko.home.hookSummary',
   'ngPrettyJson'
