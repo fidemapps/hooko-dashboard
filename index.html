@@ -1,45 +1,48 @@
 <!doctype html>
 <html lang="en" ng-app="hooko">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Hooko dashboard</title>
-        <meta name="description" content="Hooko dashboard.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
-        <link rel="stylesheet" type="text/css" href="bower_components/ng-prettyjson/dist/ng-prettyjson.min.css">
-        <link rel="stylesheet" type="text/css" href="modules/main/main.css">
-    </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hooko dashboard</title>
+    <meta name="description" content="Hooko dashboard.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/ng-prettyjson/dist/ng-prettyjson.min.css">
+    <link rel="stylesheet" type="text/css" href="modules/main/main.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Hooko Dashboard</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
+            </button>
+            <a class="navbar-brand" href="#">Hooko Dashboard</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
                 <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-              </ul>
-            </div><!--/.nav-collapse -->
-          </div>
-        </nav>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
 
-        <div class="container" ui-view></div>
+<div class="container" ui-view></div>
 
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/jquery/dist/jquery.js"></script>
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="bower_components/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
-        <script src="modules/main/main.js"></script>
-        <script src="modules/home/home.js"></script>
-        <script src="modules/home/hooks-detail/hooks-detail.js"></script>
-        <script src="modules/resources/resources.js"></script>
-    </body>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/ng-prettyjson/dist/ng-prettyjson.min.js"></script>
+<script src="modules/main/main.js"></script>
+<script src="modules/home/home.js"></script>
+<script src="modules/home/hooks-detail/hooks-detail.js"></script>
+<script src="modules/home/hooks-detail/hook-summary.js"></script>
+<script src="modules/resources/resources.js"></script>
+</body>
 </html>

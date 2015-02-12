@@ -1,10 +1,14 @@
 angular.module('hooko.resources', ['ngResource'])
-.factory('Bundle', function ($resource) {
-  return $resource('http://0.0.0.0:3000/api/bundles/:bundleName', {bundleName: '@name'});
-})
-.factory('Hook', function ($resource) {
-  return $resource('http://0.0.0.0:3000/api/bundles/:bundleName/hooks/:hookId', {hookId: '@id'});
-})
-.factory('Action', function ($resource) {
-  return $resource('http://0.0.0.0:3000/api/actions');
-});
+  .constant('hookoUrl', 'http://localhost:3000')
+  .factory('Bundle', function ($resource, hookoUrl) {
+    return $resource(hookoUrl + '/api/bundles/:bundleName', {bundleName: '@name'});
+  })
+  .factory('Hook', function ($resource, hookoUrl) {
+    return $resource(hookoUrl + '/api/bundles/:bundleName/hooks/:hookId', {hookId: '@id'});
+  })
+  .factory('Action', function ($resource, hookoUrl) {
+    return $resource(hookoUrl + '/api/actions');
+  })
+  .factory('Statistics', function ($resource, hookoUrl) {
+    return $resource(hookoUrl + '/api/bundles/:bundleName/hooks/:hookId/summary', {hookId: '@id'});
+  });

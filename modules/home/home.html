@@ -1,11 +1,17 @@
 <h2>Bundles</h2>
 
-<div class="panel panel-default" ng-repeat="bundle in home.bundles">
-  <div class="panel-heading">{{bundle.name}}</div>
-  <div class="panel-body">
-    <code pretty-json="bundle"></code>
+<div id="bundleTabs">
+    <ul class="nav nav-tabs nav-tab">
+        <li ng-repeat="bundle in home.bundles" ng-class="{active: $index === 0}"><a href="#{{bundle._id}}" data-toggle="tab">{{bundle.name}}</a></li>
+    </ul>
+    <div class="tab-content">
+        <div ng-repeat="bundle in home.bundles" ng-class="{active: $index === 0}" class="tab-pane" id="{{bundle._id}}">
+            <div class="panel-body">
+                <code pretty-json="bundle"></code>
 
-    <h4>Hooks</h4>
-    <hooks-detail bundle="bundle"></hooks-detail>
-  </div>
+                <h4>Hooks</h4>
+                <hooks-detail bundle="bundle"></hooks-detail>
+            </div>
+        </div>
+    </div>
 </div>
