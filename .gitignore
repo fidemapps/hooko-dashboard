@@ -1,4 +1,5 @@
 node_modules/
 server/bower_components/
 server/modules/config.js
-
+.bower-cache/
+.bower-registry/
